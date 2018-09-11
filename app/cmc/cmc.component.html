@@ -1,0 +1,22 @@
+<div>
+  Title:{{title}}
+  <br>
+  <input #name class="form-control" type="text" placeholder="Enter the Name..">
+  <br>
+  <input (input)="TakePrice($event)" class="form-control" type="text" placeholder="Enter the Price...">
+  <br>
+  Flag :
+  <input #Flag class="form-control" type="checkbox" placeholder="Type Price Here">
+  <button (click)="SetNameAndFlag(Flag.checked,name.value)">SetNamePriceAndFlag</button>
+  <br>
+  <input #Name class="form-control" type="text" placeholder="Enter the Name..">
+  <br>
+  <input #Price class="form-control" type="text" placeholder="Enter the Price..">
+  <br>
+  <input #Url class="form-control" type="text" placeholder="Enter the Url ..">
+  <br>
+  <input #Address class="form-control" type="text" placeholder="Enter the Address..">
+  <button (click)="ADDDATAofPRODUCT(Name.value,Price.value,Url.value,Address.value)">ADD</button> 
+
+
+</div>

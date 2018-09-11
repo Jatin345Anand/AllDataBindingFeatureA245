@@ -1,0 +1,11 @@
+ <div class="Child2Container">
+  <h1>Child2</h1> 
+  <div>
+        Tilte : {{ dynamicTitleC2}}
+        <br>
+        <button (click)="CallAppParent($event)">SendToParent</button>
+     </div>
+  <app-child21  [dynamicTitleC21]="dynamicTitleC21" (PC21Output)="takeDataFromC21($event)" ></app-child21>
+  <app-child22 [dynamicTitleC22]="dynamicTitleC22" (PC22Output)="takeDataFromC22($event)"></app-child22>
+ </div>
+ 

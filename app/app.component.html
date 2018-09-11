@@ -1,0 +1,27 @@
+ <div class="AppContainer">
+     <app-child1 (PC1Output)="TakeDatafromChild1($event)" [DynamicTitleC1]="DynamicTitleC1"></app-child1>
+      <h1>DatafromChild1 : {{DynamicTitleC1}}</h1>
+     <app-child11 (PC11Output)="TakeDatafromChild11($event)" [DynamicTitleC11]="DynamicTitleC11"></app-child11>
+     <h1>DatafromChild11 : {{DynamicTitleC11}}</h1>
+     <app-child12 (PC12Output)="TakeDatafromChild12($event)" [DynamicTitleC12]="DynamicTitleC12"></app-child12>
+     <h1>DatafromChild12 : {{DynamicTitleC12}}</h1>
+     <hr>
+     <app-child2 
+     (PC2Output)="TakeDatafromChild2($event)" [DynamicTitleC2]="DynamicTitleC2" 
+     (PC21Output)="TakeDatafromChild21($event)" [DynamicTitleC21]="DynamicTitleC21" 
+     (PC22Output)="TakeDatafromChild22($event)" [DynamicTitleC22]="DynamicTitleC22">
+     </app-child2>
+     <br>
+     <button (click)="AccessChild1viaViewChildren($event)">AccessChild1viaViewChildren</button>
+     <button (click)="AccessChild2viaViewChild($event)">AccessChild2viaViewChild</button>
+     <br>
+     <h1>DatafromChild2 : {{DynamicTitleC2}}</h1>
+     <h1>DatafromChild21 : {{DataFromC21}}</h1>
+     <h1>DatafromChild22 : {{DataFromC22}}</h1>
+      
+     <hr>
+     <!-- <app-mchild1></app-mchild1>
+     <app-mchild2></app-mchild2> -->
+     <hr>
+     <app-cmc></app-cmc>
+ </div>

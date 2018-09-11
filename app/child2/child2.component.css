@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+h1,h2,h3,h4,h5,h6{
+    text-align: center;
+}
